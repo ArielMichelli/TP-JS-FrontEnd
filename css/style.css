@@ -232,3 +232,43 @@ nav .logo {
     background-color: #DC3546;
     margin: 0 5px;
 }
+
+/* ====== CUADRO con imagen pre footer ======*/
+.cuadro {
+    display: flex;
+}
+
+.cuadro__texto {
+    width: 50%;
+    background-color: #353A40;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.cuadro__texto .cuadro__texto a {
+    color: white;
+}
+
+.cuadro__imagen {
+    width: 50%;
+}
+
+.cuadro__imagen img {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .cuadro {
+        display: block;
+    }
+
+    .cuadro__imagen {
+        width: 100%;
+    }
+
+    .cuadro__texto {
+        width: 100%;
+        padding: 20px;
+    }
+}
