@@ -14,7 +14,7 @@ li {
 
 nav {
     color: white;
-    display: flex;
+
     background-color: #353A40;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ nav ul {
 
 nav ul li a {
     color: white;
-    margin: 20px;
+    margin: 10px;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -44,8 +44,14 @@ nav .logo {
     align-items: center;
 }
 
+@media (max-width:768px) {
+    nav .logo {
+        margin: 10px;
+    }
+}
+
 .logo img {
-    width: 130px;
+    width: 120px;
 }
 
 .verde {
@@ -74,9 +80,20 @@ nav .logo {
     padding-right: 30px;
 }
 
+@media (max-width:768px) {
+    .hero__fondo__texto {
+        padding: 5px;
+    }
+
+    .botones {
+        width: 100%;
+        display: flex;
+        place-content: center;
+    }
+}
+
 .hero__fondo__texto h1 {
     width: 50%;
-
 }
 
 .hero__fondo__texto p {
@@ -129,7 +146,8 @@ nav .logo {
 
 @media (max-width:500px) {
     .botones {
-        display: grid;
+        flex-direction: column;
+        text-align: center;
         margin: 5px auto;
     }
 }
@@ -158,7 +176,6 @@ nav .logo {
 
 .oradores__tarjeta__texto {
     width: 100%;
-    height: 37%;
     padding: 0 15px;
     text-align: left;
 
@@ -167,7 +184,6 @@ nav .logo {
 .oradores__tarjeta__texto p {
     font-size: 0.9rem;
     text-align: left;
-    margin-top: 10px;
 }
 
 .oradores__tarjeta__img {
@@ -182,9 +198,7 @@ nav .logo {
 }
 
 .skills {
-    padding: 0 10px 10px;
-    margin-top: 15px;
-    height: 3%;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -192,9 +206,7 @@ nav .logo {
 .amarillo {
     text-align: center;
     font-weight: 900;
-    width: auto;
-    height: auto;
-    padding: 4px;
+    padding: 2px;
     border-radius: 5px;
     background-color: #FFC006;
     margin: 0 5px;
@@ -204,8 +216,7 @@ nav .logo {
     text-align: center;
     color: white;
     font-weight: 900;
-    width: auto;
-    padding: 4px;
+    padding: 2px;
     border-radius: 5px;
     background-color: #19A4BB;
     margin: 0 5px;
@@ -215,8 +226,7 @@ nav .logo {
     text-align: center;
     color: white;
     font-weight: 900;
-    width: auto;
-    padding: 4px;
+    padding: 2px;
     border-radius: 5px;
     background-color: #6C757C;
     margin: 0 5px;
@@ -226,8 +236,7 @@ nav .logo {
     text-align: center;
     color: white;
     font-weight: 900;
-    width: auto;
-    padding: 4px;
+    padding: 2px;
     border-radius: 5px;
     background-color: #DC3546;
     margin: 0 5px;
@@ -265,9 +274,11 @@ nav .logo {
     height: 100%;
     object-fit: cover;
 }
-.boton-blanco a{
+
+.boton-blanco a {
     color: white;
 }
+
 @media (max-width:768px) {
     .cuadro {
         display: block;
@@ -295,3 +306,31 @@ nav .logo {
     text-decoration: dotted underline;
 
 }
+
+/*NAVBAR EN EL FOOTER*/
+.menu-footer {
+    background-color: #25555e;
+}
+
+.menu-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-footer li {
+    padding: 20px;
+}
+
+@media(max-width:768px) {
+    .menu-footer li {
+        padding: 5px;
+    }
+}
+
+/* *{
+    border: solid red 1px;
+} */
