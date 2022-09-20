@@ -253,8 +253,11 @@ nav .logo {
     height: 100%;
     background-color: #353A40;
     color: white;
-    padding: 20px;
+    padding: 25px;
     font-size: 0.9rem;
+}
+.cuadro__texto .boton-blanco{
+    margin: 0;
 }
 
 .cuadro__texto a {
