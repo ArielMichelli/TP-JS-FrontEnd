@@ -12,9 +12,9 @@ li {
     list-style: none;
 }
 
+/* ===========NAVBAR============ */
 nav {
     color: white;
-
     background-color: #353A40;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +28,7 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
 }
 
 nav ul li a {
@@ -35,6 +36,10 @@ nav ul li a {
     margin: 10px;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
 }
 
 nav .logo {
@@ -117,7 +122,7 @@ nav .logo {
     }
 }
 
-/*----botones----*/
+/* --------botones en el hero-------- */
 .boton-blanco {
     font-size: 1.1rem;
     border: solid white 1px;
@@ -152,7 +157,7 @@ nav .logo {
     }
 }
 
-/* ====== ORADORES ======*/
+/* ============ORADORES============ */
 .oradores__texto {
     text-align: center;
     margin: 10px auto;
@@ -172,6 +177,11 @@ nav .logo {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(128, 128, 128, 0.2);
+    transition-duration: 0.5s;
+}
+
+.oradores__tarjeta:hover {
+    transform: scale(1.0225);
 }
 
 .oradores__tarjeta__texto {
@@ -256,7 +266,8 @@ nav .logo {
     padding: 25px;
     font-size: 0.9rem;
 }
-.cuadro__texto .boton-blanco{
+
+.cuadro__texto .boton-blanco {
     margin: 0;
 }
 
@@ -300,17 +311,32 @@ nav .logo {
     }
 }
 
+/* ============FORMULARIO pre footer============ */
+.formulario h4 {
+    font-size: 1rem;
+}
+
+.formulario h5 {
+    font-size: 1.5rem;
+}
+
 .boton-formulario-verde {
+    border: #29A646 solid 1px;
     background-color: #95BF3B;
     color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.boton-formulario-verde:hover {
+    background-color: #29A646;
 }
 
 .linea-puntos {
     text-decoration: dotted underline;
-
 }
 
-/*NAVBAR EN EL FOOTER*/
+/* ========NAVBAR EN EL FOOTER======== */
 .menu-footer {
     background-color: #25555e;
 }
@@ -328,12 +354,12 @@ nav .logo {
     padding: 20px;
 }
 
+.menu-footer li:hover {
+    text-decoration: wavy underline;
+}
+
 @media(max-width:768px) {
     .menu-footer li {
         padding: 5px;
     }
 }
-
-/* *{
-    border: solid red 1px;
-} */
