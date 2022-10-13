@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Compra Tickets</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark  nav-color">
+            <div class="container-fluid">
+                <h2>Conf Bs As</h2>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-link active"><a class="nav-link active" href="#">La conferencia</a></li>
+                    <li class="nav-link"><a class="nav-link" href="../index.html">Los oradores</li></a>
+                    <li class="nav-link"><a class="nav-link" href="../index.html">El lugar y la fecha</li></a>
+                    <li class="nav-link"><a class="nav-link" href="../index.html">Conviértete en orador</li></a>
+                    <li class="nav-link"><a class="nav-link verde" href="./tickets.html">Comprar tickets</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-tickets">
+            <section class="descuento">
+                <div class="descuento__tipo borde__azul">
+                    <h2>Estudiante</h2>
+                    <h4>Tienen un descuento</h4>
+                    <p class="descuento__portentaje">80%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="descuento__tipo borde_aqua">
+                    <h2>Trainee</h2>
+                    <h4>Tienen un descuento</h4>
+                    <p class="descuento__portentaje">50%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="descuento__tipo borde__amarillo">
+                    <h2>Junior</h2>
+                    <h4>Tienen un descuento</h4>
+                    <p class="descuento__portentaje">15%</p>
+                    <p>* presentar documentación</p>
+                </div>
+            </section>
+
+            <div class="titulo">
+                <p>venta</p>
+                <h1>valor de ticket $200</h1>
+            </div>
+
+            <div class="formulario-compra m-5">
+                <form class="container">
+                    <div class="form-group p-2">
+                        <div class="row">
+                            <div class="container-fluid col-6">
+                                <input class="col-4 form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="container-fluid col-6">
+                                <input type="text" class="col-4 form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="container-fluid col mt-3">
+                                <input type="email" class="col form-control" id="correo" placeholder="Correo">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="form-group col-md-6">
+                                <label for="cantidad">Cantidad</label>
+                                <input  placeholder="cantidad" class="form-control" id="cantidad">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" class="form-control">
+                                    <option selected>categoria</option>
+                                    <option>Estudiante</option>
+                                    <option>Trainee</option>
+                                    <option>Junior</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 p-2">
+                            <button type="button" class=" col m-1">Borrar</button>
+                            <button type="button" class=" col m-1" onclick="capturar()">Resumen</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="monto">
+        </div>
+
+    </main>
+    <footer>
+        <div class="booter">
+            <nav class="menu-footer">
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Contáctanos</li></a>
+                    <li><a href="#">Prensa</li></a>
+                    <li><a href="#">Conferencias</li></a>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

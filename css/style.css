@@ -363,3 +363,61 @@ nav .logo {
         padding: 5px;
     }
 }
+
+/* ================Pagina TICKETS================ */
+.main-tickets {
+    height: auto;
+    min-height: 70vh;
+}
+
+.descuento {
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.descuento__tipo {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.descuento__tipo h4 {
+    font-weight: 400;
+}
+
+.descuento__portentaje {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.borde__azul {
+    border: solid rgb(39, 39, 205) 1px;
+}
+
+.borde_aqua {
+    border: solid rgb(48, 177, 177) 1px;
+}
+
+.borde__amarillo {
+    border: solid rgb(192, 192, 31) 1px;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+.titulo p,h1{
+    margin: 5px;
+}
+.monto{
+    display: flex;
+    font-size: 3rem;
+    background-color: #19A4BB;
+}
+.monto p{
+    margin: 10px auto;
+    padding: 5px;
+}
