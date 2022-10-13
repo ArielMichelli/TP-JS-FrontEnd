@@ -367,7 +367,7 @@ nav .logo {
 /* ================Pagina TICKETS================ */
 .main-tickets {
     height: auto;
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 .descuento {
@@ -394,30 +394,29 @@ nav .logo {
 }
 
 .borde__azul {
-    border: solid rgb(39, 39, 205) 1px;
+    border: solid #0583F2 2px;
 }
 
 .borde_aqua {
-    border: solid rgb(48, 177, 177) 1px;
+    border: solid #17A2B8 2px;
 }
 
 .borde__amarillo {
-    border: solid rgb(192, 192, 31) 1px;
+    border: solid #FFC107 2px;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     text-transform: uppercase;
 }
-.titulo p,h1{
+
+.titulo p,
+h1 {
     margin: 5px;
 }
-.monto{
-    display: flex;
-    font-size: 3rem;
-    background-color: #19A4BB;
-}
-.monto p{
-    margin: 10px auto;
-    padding: 5px;
+
+.monto {
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #CCE5FF;
 }
