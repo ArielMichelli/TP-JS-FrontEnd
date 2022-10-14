@@ -20,8 +20,9 @@ function capturar(){
         descuento = 0.15;
     }
     else {
-        descuento = 0;
+        alert("Por favor ingrese una categoría...");
     }
+    
     monto = Math.round(cantidad_entradas *  (1 - descuento) * precio);
     escribir_monto();
 
